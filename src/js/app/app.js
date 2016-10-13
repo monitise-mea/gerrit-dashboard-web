@@ -5,6 +5,7 @@ angular.module("gerritDashboard",
         "gerritDashboard.footer",
         "gerritDashboard.dashboard",
         "gerritDashboard.stats",
+        "gerritDashboard.header",
         "gerritDashboard.constants",
         "gerritDashboard.i18n"
     ]);

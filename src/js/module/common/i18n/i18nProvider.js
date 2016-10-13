@@ -62,10 +62,10 @@ angular.module("gerritDashboard.i18n").provider("i18n", [function () {
 }]);
 
 angular.module("gerritDashboard").config(
-    ["i18nProvider", "$windowProvider",
-        function (i18n, $windowProvider) {
+    ["i18nProvider", "$windowProvider", "supportedLanguages",
+        function (i18n, $windowProvider, supportedLanguages) {
             var $window = $windowProvider.$get();
-            var lang = $window.localStorage.getItem(i18n.getLanguageStorageKey) || "en";
+            var lang = $window.localStorage.getItem(i18n.getLanguageStorageKey()) || supportedLanguages.EN;
             i18n.setLanguage(lang);
         }
     ]);

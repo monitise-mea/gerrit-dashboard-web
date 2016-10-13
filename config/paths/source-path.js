@@ -6,7 +6,9 @@ var sourceList = [
     "module/dashboard/dashboardController.js",
     "module/stats/*.js",
     "module/footer/module.js",
-    "module/footer/footerController.js"
+    "module/footer/footerController.js",
+    "module/header/module.js",
+    "module/header/*.js"
 ];
 
 var basePath = "src/js/";
